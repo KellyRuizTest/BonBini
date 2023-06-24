@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/layout_profile_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/usermale" />
+
+                <TextView
+                    android:id="@+id/id_profile_frag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="39dp"
+                    android:layout_toEndOf="@+id/profile_image"
+                    android:fontFamily="@font/convergence"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:text="username"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/logout_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/ic_baseline_exit_to_app_24" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/convergence"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:hint="Mis Pedidos"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeWidthFocused="2dp"
+        app:startIconDrawable="@drawable/ic_pedidos"
+        app:endIconDrawable="@drawable/ic_email_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_profile_appbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mispedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/convergence"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/convergence"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:hint="Email"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeWidthFocused="2dp"
+        app:startIconDrawable="@drawable/ic_email_icon"
+        app:endIconDrawable="@drawable/ic_email_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/convergence"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/text3"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:fontFamily="@font/convergence"
+    android:layout_marginTop="10dp"
+    android:focusable="false"
+    android:hint="Contrasena"
+    app:boxBackgroundColor="@android:color/transparent"
+    app:boxStrokeColor="@color/colorPrimary"
+    app:boxStrokeWidthFocused="2dp"
+    app:startIconDrawable="@drawable/ic_password"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text2"
+    app:layout_constraintVertical_bias="0.0">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/convergence"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/convergence"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:hint="metodos de pagos"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeWidthFocused="2dp"
+        app:startIconDrawable="@drawable/ic_payment"
+        app:endIconDrawable="@drawable/ic_email_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/metodos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/convergence"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/convergence"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:hint="metodos de pagos"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeWidthFocused="2dp"
+        app:startIconDrawable="@drawable/ic_icon_maps"
+        app:endIconDrawable="@drawable/ic_email_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Ubicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/convergence"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

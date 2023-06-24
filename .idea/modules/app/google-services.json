@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "903826216860",
+    "firebase_url": "https://bonbini-46abd.firebaseio.com",
+    "project_id": "bonbini-46abd",
+    "storage_bucket": "bonbini-46abd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903826216860:android:d4e5af892d4ecd4f191a59",
+        "android_client_info": {
+          "package_name": "com.twenty.bonbini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903826216860-h1vt2pfh10c7gffjt4ihcr473vmcgbun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twenty.bonbini",
+            "certificate_hash": "b0c2bc8d95e286cfa4cbc04eab09bd136c3f9a32"
+          }
+        },
+        {
+          "client_id": "903826216860-6lltgscauck9jhgqj9oa7o9if8483co4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0BHZQgQ2bxHmPhIflryqsBKrX1_B-I1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903826216860-6lltgscauck9jhgqj9oa7o9if8483co4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
